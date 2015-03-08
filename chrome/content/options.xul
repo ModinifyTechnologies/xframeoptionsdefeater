@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+ 
+<prefwindow id="xframeoptionsdefeater-prefs"
+     title="X-Frame-Options Defeater Prefeferences"
+     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+ 
+<prefpane id="xfod_pref" label="Ignore X-Frame-Options">
+  <preferences>
+    <preference id="pref_hosts" name="extensions.xframeoptionsdefeater.hosts" type="string"/>
+  </preferences>
+ 
+  <vbox align="left">
+    <label control="hosts" value="Host Names (one per line)"/>
+    <textbox preference="pref_hosts" id="hosts" multiline="true" cols="20" rows="10"/>
+  </vbox>
+</prefpane>
+ 
+</prefwindow>
+
